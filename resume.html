@@ -6,6 +6,7 @@
 	body, html{
 		margin: auto;
 		padding: 0;
+		
 	}
 	
 	#header-container {
@@ -16,20 +17,45 @@
 		border: 1px solid;
 	}
 	
-	.date {
-		position: absolute;
-		right: 165px;
-		top: 5px;
-		
-	}
+	
 	.title {
 		text-align: center;
 	}
+	
+	@media screen {
+		body {
+			width: 75%;
+			
+		}
+	}
+	
+	@media print {
+		body {
+			width: 100%;
+		}
+	}
+	
+	@media screen and (max-width: 500px) {
+		body {
+			width: 75%;
+			background-color: black;
+			color: white;
+			
+		}
+	}
+
+	.date {
+		position: absolute;
+		right: 20px;
+		
+		
+	}
+	
 </style>
 </head>
 
 <body>
-  <div id="body-container">
+  
   				<div id="header-container">
   					<h1>Jonathan Gouvion</h1>
   					<p>8211 Sand Cove Cir 103, Huntington Beach CA, 92646</p>
@@ -37,9 +63,10 @@
   				</div>
   						<h2 class="title"><em>Experience</em></h2>
   						<div class="experience-container">
-  							<h3>Learning Fuze</h3>
-  							<p>Student</p>
+  							<h3 class="job">Learning Fuze</h3>
   							<p class="date">August 2014 - January 2015</p>
+  							<p>Student</p>
+  							
   							<ul>
   								<li>Twelve week boot camp focusing on HTML, CSS, PHP, Javascript, Jquery and MYSQL</li>
   								<li>Demonstrated open communication with my fellow students on group projects through forums and hip-chat</li>
@@ -48,7 +75,8 @@
   						</div>
   						<div class="experience-container">
   							<h3>Learning Fuze (JavaScript course)</h3>
-  							<p class="date">November 2014 - January 2015</p>
+  							
+  							
   							<ul>
   								<li>Eight week intensive course covering basic and intermediate JavaScript</li>
   								<li>Learned basic fundamentals of JavaScript, Jquery and Ajax</li>
@@ -57,9 +85,12 @@
   							</ul>
   						</div>
   								<div class="experience-container">
-  									<h3>Green Tree Servicing LLC</h3>
-  									<p>Mortgage loan processor</p>
+  									<h3 class="job">Green Tree Servicing LLC</h3>
   									<p class="date">February 2013 - August 2014</p>
+  									
+  									<p>Mortgage loan processor</p>
+  									
+  									
   									<ul>
   										<li>Communicated orally and in writing with borrowers, internal employees and third party vendors</li>
   										<li>Analyzed income, assets, credit and title reports for each borrower and co-borrower</li>
@@ -71,9 +102,10 @@
   								</div>
   								
   										<div class="experience-container">
-  											<h3>Wells Fargo Dealer Services</h3>
-  											<p>Auto loans processor</p>
+  											<h3 class="job">Wells Fargo Dealer Services</h3>
   											<p class="date">March 2009 - February 2013</p>
+  											<p>Auto loans processor</p>
+  											
   											<ul>
   												<li>Maintained a successful rate on all post fund audits including post closing corrections and quality control reports</li>
   												<li>Ensured each payoff was accurate before releasing funds or title to customers</li>
@@ -85,7 +117,7 @@
   										</div>
   										
   											<div class="experience-container">
-  												<h3>Wells Fargo Bank,NA</h3>
+  												<h3 class="job">Wells Fargo Bank,NA</h3>
   												<p>Lead Teller</p>
   												<ul>
   													<li>Maintained a cash drawer of 20k and balanced the bank vault valued at 200k</li>
@@ -98,33 +130,28 @@
   													<div class="experience-container">
   														
   														<h3>University of California-Irvine</h3>
+  														<p class="date">September 2006 - December 2008</p>
   														<ul>
   															<li>Bachelor of Arts in Criminology</li>
   														</ul>
-  														<p class="date">September 2006 - December 2008</p>
+  														
   														</div>
-  														<div class="experience-container">
-  														<h3>University of California/University of Siena student exchange program</h3>
-  														<p class="date">September 2007 - December 2007</p>
-  														<ul>
-  															<li>Studies in Italian, Art and Wine</li>
-  														</ul>
-  													</div>
+  														
   														
   															<div class="experience-container">
-  																<h3>Technology Summary</h3>
+  																<h3 class="title">Technology Summary</h3>
   																<ul>
   																	<li>HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, MYSQL, AJAX, Github and Microsoft Office</li>
   																</ul>
   															</div>
   															
   																<div class="experience-container">
-  																	<h3>Interests</h3>
+  																	<h3 class="title">Interests</h3>
   																	<ul>
   																		<li>Rebuilding popular websites, Coding, Hiking, Angels Baseball, Running and Craft Beer</li>
   																		
   																	</ul>
   																</div>
-  </div>
+  
 </body>
 </html>
